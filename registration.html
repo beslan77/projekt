@@ -1,0 +1,60 @@
+<!DOCTYBE html>
+<html>
+<head>
+  <title>website</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="html,css,fefugees,">
+  <meta name="author" content="beslan">
+  <meta name="description" content="Colgone union Praxis">
+  <meta name="viewport" content="width-divice-width,initial- scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  </head>
+  
+  
+  <body>
+
+  <script>
+  function validateform() {
+    
+  var x = document.forms["myform"]["name"].value, y = document.forms["myform"]["email"].value;
+   
+  if (x == "") {
+    
+    alert("write your name");
+    return false;
+  
+  }
+    if(y == ""){
+     alert("write your Email");
+    return false;
+  }
+ }
+    
+  
+</script>
+    
+
+<form name="myform" action="/action_page.php" onsubmit = "return validateform()" method="post" >
+  
+<h3>join</h3>
+  
+Name:<br>
+<input type="text" name="name"><br>
+Email<br>
+<input type="text" name="email"><br>
+Birthday<br>
+<input type="date" ><br><br>
+gender<br>
+Male:<input type="radio" name="gender" >
+Female:<input type="radio" name="gender" > <br><br>
+<input type="submit" name="submit">
+
+</form>
+    
+    
+    
+
+    
+</body>
